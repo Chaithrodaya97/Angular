@@ -1,0 +1,19 @@
+.text-color
+{
+    color: blue;
+}
+
+.text-bgcolor
+{
+    background-color: maroon;
+}
+.text-bkcolor
+{
+    background-color: orange;
+}
+
+.toggle-color
+{
+    background-color: pink;
+    
+}

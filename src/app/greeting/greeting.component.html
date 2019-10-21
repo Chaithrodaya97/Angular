@@ -1,0 +1,21 @@
+
+<p class="text-color text-bgcolor">{{message}}</p>
+<p [class]="textColor">{{message}}</p>
+<p [ngClass]="['textColor','text-bgcolor']">{{message}}</p>
+<p [ngClass]="['text-color','text-bkcolor']">{{message}}</p>
+<p [ngClass]="greetingStyle">{{message}}</p>
+<p [ngStyle]="{'color':'red','background-color':'blue'}">{{message}}</p>
+<p [ngStyle]="{'color':s1 ? 'black':'orange' ,'background-color':s1 ? 'orange':'black'}">Toggle toggle</p>
+<p>Happy Diwali</p>
+<button class="btn btn-info" (click)="toggleColor()">Toggle Button</button>
+
+<button (click)="sayGreet($event)">
+    Greet Button
+</button>
+<p class="text-color text-bgcolor">{{message|reverseString}}</p>
+<p class="text-color text-bgcolor">{{message|lowercase}}</p>
+<p class="text-color text-bgcolor">{{message|titlecase}}</p>
+<p class="text-color text-bgcolor">{{message|uppercase}}</p>
+
+<h2 appColor>{{message}}</h2>
+
